@@ -1,0 +1,23 @@
+#chat{
+    height: 490px;
+}
+.messages_container{
+    height: 100%;
+    overflow: scroll;
+}
+#messages { 
+    list-style-type: none; margin: 0; padding: 0; 
+}
+#messages li { 
+        padding: 5px 10px;
+}
+
+#m{
+    width: 100%;
+}
+
+ .error{
+    color: #440;
+    text-decoration: blink;
+}
+

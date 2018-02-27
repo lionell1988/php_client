@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
-        <script src="chat.js?n=2"></script>
+        <script src="authent.js?n=0"></script>
     </head>
     <body>
 

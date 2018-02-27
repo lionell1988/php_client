@@ -21,12 +21,19 @@ $(function () {
     });
     socket.on('disconnect', () => {
         console.log('disconnected');
+        $('#messages').append('<li class="error">Disconnected.</li>');
     });
     socket.on('connect', () => {
         console.log('connected...');
         $('#messages').append('<li>Connected to the chat server...');
     });
-    socket.emit('hello', '{msg:hello}');
+    
+    //try auth
+    var auth = new Object();
+    auth.name = 'Leonardo';
+    auth.pwd = '111213';
+    socket.emit('auth',auth);
+    
     $('form').submit(function () {
         var msgTxt = $('#m').val();
         var msg = new Object();
@@ -34,7 +41,7 @@ $(function () {
         msg.date = new Date();
         msg.sender = $('#u').val();
         console.log(msg);
-        socket.emit('chat message', msg);
+        socket.emit('chat message', msg);//send message to the server (socket). 
         $('#m').val('');
         $("#messages_container").scrollTop($("#messages_container")[0].scrollHeight);
         return false;

@@ -1,0 +1,18 @@
+.message_box{
+    height: 700px;
+    margin: 1px;
+    border: solid 1px;
+    overflow-y: auto;
+    transform: rotate(-180deg);
+}
+
+.users{
+    border: solid 1px;
+    height: 700px;
+    margin: 1px;
+}
+
+.message_list{
+    list-style-type:none;
+    transform: rotate(-180deg);
+}
